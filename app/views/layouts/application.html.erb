@@ -16,11 +16,10 @@
   <body>
     <header class="navbar navbar-fixed-top navbar-inverse">
   <div class="container">
+    <%= render 'layouts/header' %>
     <% flash.each do |message_type, message| %>
         <div class="alert alert-<%= message_type %>"><%= message %></div>
-      <% end %>
-    <%= link_to "sample app", root_path, id: "logo" %>
-    <%= render 'layouts/header' %>
+    <% end %>
   </div>
 </header>
     <div class="container">
